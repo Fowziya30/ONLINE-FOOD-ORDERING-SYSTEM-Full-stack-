@@ -1,0 +1,17 @@
+<div class="card" style="width: 50rem; height:20rem; background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUaWkKdZiLQQTyO7QyrMmpEOudlVKXwKk3_Q&usqp=CAU);">
+  <div class="card-body">
+    <h5 class="card-title">LOGIN PAGE</h5>
+    <form name="user">
+      <mat-progress-bar mode="buffer" *ngIf="progressBar"></mat-progress-bar>
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">USERNAME</label>
+        <input type="text" class="form-control" name="username" [(ngModel)]="user.username">
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">PASSWORD</label>
+        <input type="password" class="form-control" name="password" [(ngModel)]="user.password">
+      </div>
+      <button type="submit" class="btn btn-primary" (click)="addUser()">Login</button>
+    </form>
+  </div>
+</div>

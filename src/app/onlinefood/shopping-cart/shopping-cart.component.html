@@ -1,0 +1,44 @@
+
+
+<div class="body tittle">
+  <div class="card-header text-center"  style="max-width: 20rem; background: #030508e7; color:antiquewhite;">YOUR ADDED ITEMS</div>
+  <br>
+</div>
+<div style="background: #2c1725f6; padding: 30px; border-radius: 60px;">
+  <div class="card text-orange  mb-1" style="max-width: 15rem; background: #2fc9dd; color: black; border-radius: 2px;">
+    <div class="card-header text-center">CART ITEMS</div>
+    <div class="card-body">
+      <h2 class="card-title">Total Rupees:{{total}}</h2>
+      <h3 class="card-title">Food Items:</h3>
+
+      <ul>
+        <li *ngFor="let order of orders.productOrders">
+          {{ order.product.name }} - {{ order.quantity}} pcs.
+        </li>
+      </ul>
+
+      <button class="btn btn-light btn-block" (click)="finishOrder()"
+        [disabled]="orders.productOrders.length == 0">Checkout
+      </button>
+    </div>
+  </div>
+  <p><strong>NOTE:</strong></p>
+
+  <div class="card text-white bg-warning mb-2" style="max-width: 19rem;">
+    <div class="card-header text-center">Delivery</div>
+    <div class="card-body" style="padding: 0px !important; margin-top: -30px;">
+      <div class="text-center mt-5" style="text-align: left !important; padding: 0">
+        <div>
+          <ul class="list-group" style="color: black">
+            <li class="list-group-item" *ngFor="let item of itemsList" style="background: #2fc9dd !important;">
+              <input type="radio" [(ngModel)]="radioSelected" name="list_name" value="{{item.value}}"
+                (change)="onItemChange(item)" />
+              {{item.name}}{{item.price}}
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

@@ -1,0 +1,49 @@
+<div class="row card-deck">
+  <div class="col-lg-4 col-md-6 mb-4" *ngFor="let order of productOrders; let i = index">
+    <div class="card text-center">
+      <div class="card-header"style="background-color:black; color:white" >
+        <h2>{{ order.product.name }}</h2>
+      </div>
+
+      <div class="card-body" style="background-image: url(data:image/jpeg;base64,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);" width="100px" height="100px" padding="10px">
+        <a (click)="sngleProduct(order.product.id)"><img class="card-img-top img-thumbnail"
+            style=" background-color: black;  cursor: pointer" src="{{ order.product.pictureUrl }}" alt="image" /></a>
+        <h5 class="card-title" id="price">
+          <i class="fas fa-rupee-sign"></i>Price = {{ order.product.price }}
+          <button title="Information" id="btn" (click)="showUndoBtn(i)" (click)="productInfo(order.product.id)">
+            <i class="fas fa-star"></i>
+          </button>
+          <!-- <button title="View" id="btn" (click)="sngleProduct(order.product.id)">
+            <i class="fas fa-eye-slash"></i>
+          </button> -->
+        </h5>
+        <div class="modal" [attr.id]="'undoBtn' + i" *ngIf="showBtn === i && showMyContainerInfo" class="editBtn"
+          md-raised-button color="primary">
+          <div class="modal-content">
+            <span>{{ description }}</span>
+          </div>
+        </div>
+        <hr style="margin-top: 0px !important; margin-bottom: 10px !important" />
+        <div class="row" *ngIf="user">
+          <div class="col-5 padding-0" *ngIf="!isProductSelected(order.product)" style="margin-left: 15px">
+            <input type="number" min="0" max="10" class="form-control" [(ngModel)]="order.quantity" />
+          </div>
+          <div class="col-6 padding-0" *ngIf="!isProductSelected(order.product)">
+            <button class="btn btn-primary" (click)="addToCart(order)" [disabled]="order.quantity <= 0">
+              ADD TO CART
+            </button>
+          </div>
+          <div class="col-12" *ngIf="isProductSelected(order.product)">
+            <button class="btn btn-danger btn-block active" (click)="removeFromCart(order)">
+              Remove From Cart
+            </button>
+          </div>
+        </div>
+        <div *ngIf="!user">
+              <p><strong>Please login to buy product</strong> <button type="button" class="btn btn-link"
+                  (click)="login()">Login</button> </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

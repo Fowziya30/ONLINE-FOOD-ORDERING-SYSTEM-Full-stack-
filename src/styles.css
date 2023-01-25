@@ -1,0 +1,78 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import '~bootstrap/dist/css/bootstrap.min.css';
+html, body { 
+  height: 100%; 
+}
+body { 
+  margin: 0; 
+  background: #aaf0f1; 
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQGX16DfNBBI3-t4GPgBiwDuS8dy0xKQla4A&usqp=CAU);
+  font-family: initial !important; 
+  color: #b4276e
+}
+.title-page{
+  border-bottom: 3px solid;
+  font-family: initial;
+  padding: 15px 10px;
+  border-radius: 20px;
+  width: 100px;
+  text-align: center;
+  color: #d8951907;
+  }
+
+  .container {
+      margin-top: 50px;
+      margin-right: 20px;
+      margin-left: 40px;
+      
+  }
+  .fa-info-circle{
+    color: #0c0c09;
+    font-size: 22px;
+    cursor: pointer; 
+    margin-left: 22px;
+}
+#btn{
+     background: rgba(17, 207, 80, 0.068);
+     border: 0;
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 3;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 200%;
+    height: 200%;
+    overflow: auto;
+    background-color: rgb(231, 15, 15);
+    background-color: rgba(80, 36, 202, 0.918);
+  }
+  
+  .modal-content {
+    background-color: rgb(216, 216, 20);
+    margin: auto;
+    padding: 10px;
+    border: 1px solid rgba(5, 5, 4, 0.836);
+    width: 80%;
+  }
+  #price{
+color: #0f0909;
+font-weight:500;
+font-style:oblique ;
+padding: 10px 5px;
+font-size: 20px;
+display: inline-block;
+  }
+
+  .fa-eye-slash{
+  font-size: 22px;
+  color: #060211;
+  }
+  .btn-primary {
+    font-size: 12px;;
+  }
+  
+  
